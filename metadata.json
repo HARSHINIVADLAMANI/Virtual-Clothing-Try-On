@@ -1,0 +1,6 @@
+{
+  "name": "AR Virtual Try-On",
+  "description": "An augmented reality virtual try-on application powered by Snap Camera Kit.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

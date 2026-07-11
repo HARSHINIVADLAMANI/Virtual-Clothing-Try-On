@@ -1,0 +1,1 @@
+sed -i "s/video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } }/video: window.innerWidth < 768 ? { facingMode: 'user', width: { ideal: 720 }, height: { ideal: 1280 } } : { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } }/g" src/components/ARViewer.tsx
