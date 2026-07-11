@@ -120,7 +120,7 @@ export function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-neutral-950 rounded-[2rem] overflow-hidden">
                 {/* Simulated AR View */}
                 <div className="absolute inset-0 opacity-80 ">
-                   <img src="src/assets/image.png" alt="Person" className="w-full h-full object-cover  " />
+                   <img src="assets/images/Image.png" alt="Person" className="w-full h-full object-cover  " />
                 </div>
                 
                 {/* Scanner line effect */}

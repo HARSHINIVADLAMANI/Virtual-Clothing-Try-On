@@ -10,6 +10,9 @@ export interface ClothingItem {
 
 export const CATEGORIES = ['All', 'Coats', 'Tops', 'Eyewear', 'Dresses', 'Skirts', 'Misc'];
 
+export const VITE_SNAP_CAMERA_KIT_API_TOKEN="eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzc3MTEwNzg3LCJzdWIiOiJmODQ0ZjkxZi0xYzI0LTRlNTctOGI3Mi00OGIzNzc2ZGMxYTd-U1RBR0lOR35jMzBlMWM4YS01ODg3LTQ4Y2ItYTBjNi02YjljNWQxY2ViNWEifQ.fFgOq-QVcv3DXMskfxxIFN_l0rNfNEuSJjiM_qC7ggg";
+
+
 const defaultLensGroupId = 'bf5f5394-2619-438c-a66d-88c1586114a2';
 
 export const CLOTHING_ITEMS: ClothingItem[] = [
@@ -18,7 +21,7 @@ export const CLOTHING_ITEMS: ClothingItem[] = [
     name: 'Denim Coat',
     category: 'Coats',
     price: '$89.99',
-    image: 'src/assets/items/DenimCoat.png',
+    image: 'assets/images/items/DenimCoat.png',
     lensId: 'b873a3b8-4d0c-430d-856f-c85d39dfed3d',
     lensGroupId: defaultLensGroupId,
   },
@@ -54,7 +57,7 @@ export const CLOTHING_ITEMS: ClothingItem[] = [
     name: 'WinterDress',
     category: 'Dresses',
     price: '$79.99',
-    image: 'src/assets/items/winterDress.png',
+    image: 'assets/images/items/winterDress.png',
     lensId: '24a02616-2500-4804-bf9f-371821d3f83f',
     lensGroupId: defaultLensGroupId,
   },

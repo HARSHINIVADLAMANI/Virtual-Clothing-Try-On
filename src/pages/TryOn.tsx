@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, data } from 'react-router-dom';
 import { Camera, ArrowLeft, Video, VideoOff, Maximize, Minimize, ChevronDown, ChevronUp } from 'lucide-react';
 import { ARViewer } from '../components/ARViewer';
-import { CLOTHING_ITEMS, ClothingItem } from '../data';
+import { CLOTHING_ITEMS, ClothingItem, VITE_SNAP_CAMERA_KIT_API_TOKEN} from '../data';
 import { CameraKitConfig } from '../types';
 
 export function TryOn() {
@@ -23,7 +23,8 @@ export function TryOn() {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
-    const token = import.meta.env.VITE_SNAP_CAMERA_KIT_API_TOKEN || '';
+    // const token = import.meta.env.VITE_SNAP_CAMERA_KIT_API_TOKEN || '';
+    const token = VITE_SNAP_CAMERA_KIT_API_TOKEN || '';
     
     let initialItem = CLOTHING_ITEMS[0];
     if (id) {
